@@ -16,13 +16,16 @@ import contadorV2 from "./componentes/contador/ContadorDisplay";
 import ContadorV2 from "./componentes/contador/ContadorV2";*/}
 // import HomeScreen from "./HomeScreen";
 // import DetailsScreen from "./DetailScreen";
-import Principal from "./componentes/Licao/Principal";
-import Detalhe from "./componentes/Licao/Detalhe";
-import ContadorDisplay from "./componentes/contador/ContadorDisplay";
-import ContadorV2 from "./componentes/contador/ContadorV2";
-import Aleatorio from "./componentes/Aleatorio";
-import Aleatorio2 from "./componentes/Licao/Aleatorio2";
-import Teste from "./componentes/Licao/Teste";
+// import Principal from "./componentes/Licao/Principal";
+// import Detalhe from "./componentes/Licao/Detalhe";
+// import ContadorDisplay from "./componentes/contador/ContadorDisplay";
+// import ContadorV2 from "./componentes/contador/ContadorV2";
+// import Aleatorio from "./componentes/Aleatorio";
+// import Aleatorio2 from "./componentes/Licao/Aleatorio2";
+// import Teste from "./componentes/Licao/Teste";
+import Familia from "./componentes/relacao/Familia";
+import Menbro from "./componentes/relacao/Menbro";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 
 
@@ -30,20 +33,43 @@ const Stack = createNativeStackNavigator()
 
 
 export default () => (
+<SafeAreaView  style={ styles.TelaIniciante}>
+ <Familia    >
+
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+<Menbro nome= "Edinaldo" sobrenome="Pereira" />
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+
+ </Familia>
+ 
+
+ <Familia >
+
+<Menbro nome= "lucas" sobrenome="Jabuti" />
+<Menbro nome= "Edinaldo" sobrenome="Jabuti" />
+<Menbro nome= "Jorge" sobrenome="Jabuti" />
+<Menbro nome= "Jorge" sobrenome="Jabuti" />
+
+ </Familia>
+
+
+ </SafeAreaView>
+
 
  
 
 
- 
+
   
-        <NavigationContainer>
-             <Stack.Navigator>
-                 <Stack.Screen name="Detalhe" component={Detalhe}/>
-                <Stack.Screen name="Contador" component={ContadorV2}/>
-                 <Stack.Screen name="Aleatorio" component={Aleatorio2}/>
+        // <NavigationContainer>
+        //      <Stack.Navigator>
+        //          <Stack.Screen name="Detalhe" component={Detalhe}/>
+        //         <Stack.Screen name="Contador" component={ContadorV2}/>
+        //          <Stack.Screen name="Aleatorio" component={Aleatorio2}/>
                 
-             </Stack.Navigator>
-        </NavigationContainer> 
+        //      </Stack.Navigator>
+        // </NavigationContainer> 
 
 
 
@@ -52,13 +78,13 @@ export default () => (
 )
 
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
     TelaIniciante : {
 
         flexGrow : 1,
         justifyContent : 'center',
         alignItems : 'center',
-         padding: 20,
+         padding: 14,
 
     }
 

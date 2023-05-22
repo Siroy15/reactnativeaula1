@@ -7,7 +7,7 @@ const Aleatorio = ({route, navegation}) => {
   const [numeroAleatorio, setNumeroAleatorio] = useState(null);
 
   const gerarNumeroAleatorio = () => {
-    const numeroAleatorio = Math.floor(Math.random() ,{route.params?.max} ,{route.params?.min})
+    const numeroAleatorio = Math.floor(Math.random() )
     setNumeroAleatorio(numeroAleatorio);
   };
 
