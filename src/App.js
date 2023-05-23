@@ -23,9 +23,11 @@ import ContadorV2 from "./componentes/contador/ContadorV2";*/}
 // import Aleatorio from "./componentes/Aleatorio";
 // import Aleatorio2 from "./componentes/Licao/Aleatorio2";
 // import Teste from "./componentes/Licao/Teste";
-import Familia from "./componentes/relacao/Familia";
-import Menbro from "./componentes/relacao/Menbro";
+// import Familia from "./componentes/relacao/Familia";
+// import Menbro from "./componentes/relacao/Menbro";
 import { SafeAreaView } from "react-native-safe-area-context";
+// import ListaProdutos from "./componentes/produto/ListaProdutos";
+import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2";
 
 
 
@@ -34,24 +36,11 @@ const Stack = createNativeStackNavigator()
 
 export default () => (
 <SafeAreaView  style={ styles.TelaIniciante}>
- <Familia    >
 
-<Menbro nome= "Jorge" sobrenome="Pereira" />
-<Menbro nome= "Edinaldo" sobrenome="Pereira" />
-<Menbro nome= "Jorge" sobrenome="Pereira" />
-<Menbro nome= "Jorge" sobrenome="Pereira" />
 
- </Familia>
- 
 
- <Familia >
+<ListaProdutoV2/>
 
-<Menbro nome= "lucas" sobrenome="Jabuti" />
-<Menbro nome= "Edinaldo" sobrenome="Jabuti" />
-<Menbro nome= "Jorge" sobrenome="Jabuti" />
-<Menbro nome= "Jorge" sobrenome="Jabuti" />
-
- </Familia>
 
 
  </SafeAreaView>
@@ -121,6 +110,35 @@ const styles = StyleSheet.create({
 
 
 // export default App
+
+
+
+
+
+{/* <ListaProdutos/> */}
+
+
+
+
+
+ {/* <Familia    >
+
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+<Menbro nome= "Edinaldo" sobrenome="Pereira" />
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+<Menbro nome= "Jorge" sobrenome="Pereira" />
+
+ </Familia>
+ 
+
+ <Familia >
+
+<Menbro nome= "lucas" sobrenome="Jabuti" />
+<Menbro nome= "Edinaldo" sobrenome="Jabuti" />
+<Menbro nome= "Jorge" sobrenome="Jabuti" />
+<Menbro nome= "Jorge" sobrenome="Jabuti" />
+
+ </Familia> */}
 
 
 
