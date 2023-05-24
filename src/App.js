@@ -26,8 +26,16 @@ import ContadorV2 from "./componentes/contador/ContadorV2";*/}
 // import Familia from "./componentes/relacao/Familia";
 // import Menbro from "./componentes/relacao/Menbro";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Quadrado from "./componentes/layout/Quadrado";
 // import ListaProdutos from "./componentes/produto/ListaProdutos";
-import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2";
+// import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2";
+import FlexBoxV1 from "./componentes/layout/FlexBoxV1";
+import FlexNBoxV2 from "./componentes/layout/FlexNBoxV2";
+import FlexBoxV3 from "./componentes/layout/FlexBoxV3";
+
+
+
+
 
 
 
@@ -38,10 +46,8 @@ export default () => (
 <SafeAreaView  style={ styles.TelaIniciante}>
 
 
-
-<ListaProdutoV2/>
-
-
+{/* <FlexBoxV1/> */}
+<FlexBoxV3/>
 
  </SafeAreaView>
 
@@ -110,6 +116,11 @@ const styles = StyleSheet.create({
 
 
 // export default App
+
+
+
+{/* 
+<ListaProdutoV2/> */}
 
 
 
