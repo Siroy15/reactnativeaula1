@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Text, View, StyleSheet} from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
  {/*import Primeiro from './componentes/Primeiro'
  import Of, {Comp1, Comp2} from './componentes/MultiplosComponentes'
@@ -25,14 +26,19 @@ import ContadorV2 from "./componentes/contador/ContadorV2";*/}
 // import Teste from "./componentes/Licao/Teste";
 // import Familia from "./componentes/relacao/Familia";
 // import Menbro from "./componentes/relacao/Menbro";
-import { SafeAreaView } from "react-native-safe-area-context";
-import Quadrado from "./componentes/layout/Quadrado";
+// import Quadrado from "./componentes/layout/Quadrado";
+// import Mega from "./componentes/mega/Mega";
 // import ListaProdutos from "./componentes/produto/ListaProdutos";
 // import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2";
-import FlexBoxV1 from "./componentes/layout/FlexBoxV1";
-import FlexNBoxV2 from "./componentes/layout/FlexNBoxV2";
-import FlexBoxV3 from "./componentes/layout/FlexBoxV3";
-
+// import FlexBoxV1 from "./componentes/layout/FlexBoxV1";
+// import FlexNBoxV2 from "./componentes/layout/FlexNBoxV2";
+// import FlexBoxV3 from "./componentes/layout/FlexBoxV3";
+// import FlexBoxV4 from "./componentes/layout/FlexBoxV4";
+import JogosRuins from "../Projeto/JogosRuins";
+import jogosBons from "../Projeto/JogosBons";
+import BomScreen from "../Projeto/Botões";
+import Tema from "../Projeto/Tema";
+import jogosRuins from "../Projeto/JogosRuins";
 
 
 
@@ -43,13 +49,18 @@ const Stack = createNativeStackNavigator()
 
 
 export default () => (
-<SafeAreaView  style={ styles.TelaIniciante}>
 
-
-{/* <FlexBoxV1/> */}
-<FlexBoxV3/>
-
- </SafeAreaView>
+    <NavigationContainer>
+                 <Stack.Navigator>
+                     <Stack.Screen name="Tema" component={Tema}/>
+                    <Stack.Screen name="BOM JOGO" component={jogosBons}/>
+                     <Stack.Screen name="RUINS JOGO" component={JogosRuins}/>
+                    
+                 </Stack.Navigator>
+            </NavigationContainer> 
+    
+    
+     
 
 
  
@@ -57,15 +68,6 @@ export default () => (
 
 
   
-        // <NavigationContainer>
-        //      <Stack.Navigator>
-        //          <Stack.Screen name="Detalhe" component={Detalhe}/>
-        //         <Stack.Screen name="Contador" component={ContadorV2}/>
-        //          <Stack.Screen name="Aleatorio" component={Aleatorio2}/>
-                
-        //      </Stack.Navigator>
-        // </NavigationContainer> 
-
 
 
 
